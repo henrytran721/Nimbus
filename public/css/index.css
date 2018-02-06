@@ -16,13 +16,12 @@ h1{
     background-color: #ABE6FF;
     border: none;
     color: white;
-    padding: 100px 250px;
+    padding: 50px 200px;
     max-width:35%;
-    margin-top:80%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 40px 20px;
+    margin: 400px 20px;
     cursor: pointer;
 }
