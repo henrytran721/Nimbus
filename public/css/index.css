@@ -12,16 +12,18 @@ h1{
 	border: 3px solid #ABE6FF;
 }
 
+button {
+	margin-top:55%;
+}
 .button {
     background-color: #ABE6FF;
     border: none;
     color: white;
     padding: 100px 250px;
-    max-width:45%;
+    max-width:35%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin-top:60%;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
