@@ -17,10 +17,11 @@ h1{
     border: none;
     color: white;
     padding: 100px 250px;
-    max-width:50%;
+    max-width:45%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    margin-top:60%;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
