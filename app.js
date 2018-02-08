@@ -15,12 +15,15 @@ var reflect = require('./routes/reflect');
 var progress = require('./routes/progress');  
 var affirmations = require('./routes/affirmations');
 var checkin = require('./routes/checkin');
+var selectReflect = require('./routes/selectReflect');
+var evaluateReflect = require('./routes/evaluateReflect')
+var stepsReflect = require('./routes/stepsReflect');
 
 var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views'));  
 app.engine('handlebars', handlebars());
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
@@ -45,7 +48,9 @@ app.get('/reflect', reflect.viewReflect);
 app.get('/progress', progress.viewProgress);
 app.get('/affirmations', affirmations.viewAffirmations);
 app.get('/checkin', checkin.viewCheckin);
-
+app.get('/selectReflect', selectReflect.viewSelectReflect);
+app.get('/evaluateReflect', evaluateReflect.viewEvaluateReflect);
+app.get('/stepsReflect', stepsReflect.viewStepsReflect);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
