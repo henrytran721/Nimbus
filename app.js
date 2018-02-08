@@ -14,6 +14,8 @@ var index = require('./routes/index');
 var reflect = require('./routes/reflect');
 var progress = require('./routes/progress');  
 var affirmations = require('./routes/affirmations');
+var checkin = require('./routes/checkin');
+
 var app = express();
 
 // all environments
@@ -42,6 +44,8 @@ app.get('/', index.view);
 app.get('/reflect', reflect.viewReflect);
 app.get('/progress', progress.viewProgress);
 app.get('/affirmations', affirmations.viewAffirmations);
+app.get('/checkin', checkin.viewCheckin);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
