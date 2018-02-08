@@ -1,3 +1,36 @@
 h1 {
     text-align: center;
 }
+
+#affirmationMessageDiv {
+    width: 30%;
+    height: 20%;
+    border: solid 1px; 
+    text-align: center;
+    position: relative;
+    margin:auto;
+
+}
+
+#message {
+    position: relative;
+}
+
+#messageDiv {
+    position: relative;
+    top:20%;
+}
+
+#rollButton {
+    position: relative;
+}
+
+#rollDiv {
+    position: relative;
+    top: 20%;
+
+}
+
+#continueDiv {
+    text-align: center;
+}
