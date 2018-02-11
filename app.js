@@ -18,7 +18,7 @@ var checkin = require('./routes/checkin');
 var selectReflect = require('./routes/selectReflect');
 var evaluateReflect = require('./routes/evaluateReflect')
 var stepsReflect = require('./routes/stepsReflect');
-var affirmationEdit = require('./routes/affirmationEdit')
+var affirmationEdit = require('./routes/affirmationedit')
 
 var app = express();
 
