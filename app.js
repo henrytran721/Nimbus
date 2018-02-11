@@ -18,6 +18,7 @@ var checkin = require('./routes/checkin');
 var selectReflect = require('./routes/selectReflect');
 var evaluateReflect = require('./routes/evaluateReflect')
 var stepsReflect = require('./routes/stepsReflect');
+var affirmationEdit = require('./routes/affirmationEdit')
 
 var app = express();
 
@@ -51,6 +52,7 @@ app.get('/checkin', checkin.viewCheckin);
 app.get('/selectReflect', selectReflect.viewSelectReflect);
 app.get('/evaluateReflect', evaluateReflect.viewEvaluateReflect);
 app.get('/stepsReflect', stepsReflect.viewStepsReflect);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

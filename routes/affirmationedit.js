@@ -1,6 +1,6 @@
 
 exports.viewAffirmations = function(req, res) {
-    res.render('affirmationedit', {
+    res.render('affirmationEdit', {
     	
 
     });
