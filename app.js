@@ -52,6 +52,8 @@ app.get('/checkin', checkin.viewCheckin);
 app.get('/selectReflect', selectReflect.viewSelectReflect);
 app.get('/evaluateReflect', evaluateReflect.viewEvaluateReflect);
 app.get('/stepsReflect', stepsReflect.viewStepsReflect);
+app.get('/affirmationEdit', affirmationEdit.viewEditAffirmations);
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

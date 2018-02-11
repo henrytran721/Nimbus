@@ -1,5 +1,5 @@
 
-exports.viewAffirmations = function(req, res) {
+exports.viewEditAffirmations = function(req, res) {
     res.render('affirmationEdit', {
     	
 
