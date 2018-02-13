@@ -1,5 +1,6 @@
 body{
 
+
 }
 h1 {
     text-align: center;
@@ -15,10 +16,12 @@ h3 {
 
 #backgroundimage{
     background-position:center;
+    margin-top:30%;
     height:100%;
-    width:100%;
+    max-width:100%;
     background: url(https://s3-us-west-1.amazonaws.com/teamreflection/Cloud.png);
     background-repeat: no-repeat;
+    background-size:contain;
 }
 
 /*#affirmationMessageDiv {
@@ -37,6 +40,7 @@ h3 {
     color:white;
     font-size: 30px;
     font-family: verdana;
+    margin-left:40%;
 }
 
 #messageDiv {
@@ -50,15 +54,26 @@ h3 {
     border: none;
     color: white;
     position: relative;
-    width:100px;
-    height:50px;
+    width:300px;
+    height:70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 12px;
+    font-size: 24px;
     font-weight:bold;
     cursor: pointer;
+    margin-left:35%;
+    margin-top:40%;
 
+}
+
+#editButton
+{
+    position:relative;
+    width:5px;
+    height:5px;
+    margin-top:-35%;
+    margin-left:80%;
 }
 
 #rollDiv {
