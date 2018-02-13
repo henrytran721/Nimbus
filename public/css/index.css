@@ -96,6 +96,7 @@ h1{
     font-size: 40px;
     margin-top:200px;
     margin-left: -190px;
+    border-radius: 20px;
     /*margin-top:60%;*/ 
     cursor: pointer;
     float:left;
@@ -129,6 +130,7 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 40px;
+    border-radius: 20px;
 
     cursor: pointer;
     float:right;
@@ -165,6 +167,7 @@ h1{
     text-decoration: none;
     display: inline-block;
     font-size: 40px;
+    border-radius: 20px;
 
     cursor: pointer;
 }
