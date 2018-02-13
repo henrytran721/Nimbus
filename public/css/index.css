@@ -9,6 +9,9 @@ h1{
 
 }
 
+img {
+    margin-top:-10px;
+}
 .container {
     position: relative;
     text-align: center;
@@ -45,6 +48,9 @@ h1{
     height: 50%;
     width:50%;
 }
+
+
+
 #reflect-box {
     background-color: #3EBDCF;
     border: 1px solid white;
@@ -79,6 +85,35 @@ h1{
     display: inline-block;
 }
 
+.bottom-left {
+    position: absolute;
+    bottom: 680px;
+    left: 190px;
+    font-family: verdana;
+    font-size:40px;
+    color:white;
+
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 680px;
+    right: 170px;
+    font-family: verdana;
+    font-size:40px;
+    color:white;
+
+}
+
+.bottom-center {
+    position: absolute;
+    bottom: 380px;
+    right:430px;
+    font-family: verdana;
+    font-size:40px;
+    color:white;
+
+}
 
 .button1 {
     background-color: #3EBDCF;
