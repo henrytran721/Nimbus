@@ -19,6 +19,7 @@ var selectReflect = require('./routes/selectReflect');
 var evaluateReflect = require('./routes/evaluateReflect')
 var stepsReflect = require('./routes/stepsReflect');
 var affirmationEdit = require('./routes/affirmationedit')
+var login = require('./routes/login')
 
 var app = express();
 
@@ -53,6 +54,7 @@ app.get('/selectReflect', selectReflect.viewSelectReflect);
 app.get('/evaluateReflect', evaluateReflect.viewEvaluateReflect);
 app.get('/stepsReflect', stepsReflect.viewStepsReflect);
 app.get('/affirmationEdit', affirmationEdit.viewEditAffirmations);
+app.get('/login', login.viewLogin);
 
 
 
