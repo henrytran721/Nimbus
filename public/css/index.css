@@ -10,7 +10,19 @@ h1{
 }
 
 img {
-    margin-top:-10%;
+    margin-top:5%;
+}
+
+p {
+    margin-top:5%;
+}
+
+.affirmation {
+    margin-top:22%;
+}
+
+.reflect {
+    margin-top:-5%;
 }
 .container {
     position: relative;
@@ -85,35 +97,6 @@ img {
     display: inline-block;
 }
 
-.bottom-left {
-    position: absolute;
-    bottom: 44%;
-    left: 20%;
-    font-family: verdana;
-    font-size:40px;
-    color:white;
-
-}
-
-.bottom-right {
-    position: absolute;
-    bottom: 44%;
-    right: 18%;
-    font-family: verdana;
-    font-size:40px;
-    color:white;
-
-}
-
-.bottom-center {
-    position: absolute;
-    bottom: 28%;
-    right:44%;
-    font-family: verdana;
-    font-size:40px;
-    color:white;
-
-}
 
 .button1 {
     background-color: #3EBDCF;
