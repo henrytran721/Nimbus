@@ -13,7 +13,11 @@
     
     <div id="imgDiv">
         <div id="list">
-            sadsda
+            <ul id="UList">
+                <li>Math Midterm</li>
+                <li>Homework</li>
+            </ul>
+            
         </div>
         <img src="https://s3-us-west-1.amazonaws.com/teamreflection/whiteCloud.png">
     </div>
@@ -21,10 +25,12 @@
 
 
     <div id="userInput">
-        <form>
+        <!--<form>
              <input type="text" name="task"><br>
              <input type="submit" value="Submit">
-        </form>
+        </form>-->
+        <input type="text" id="userInput" placeholder="Enter what is on your mind...">
+        <span onclick="newElement()" class="addButton">+</span>
     
     </div>
 
@@ -35,6 +41,10 @@
         </button>
         </a>
     </div>
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/reflect.js"></script>
 </body>
 
 </html>

@@ -3,19 +3,29 @@
     text-align: center;
 }
 
+h3 {
+    font-size: 45px;
+    font-family:verdana;
+
+}
+
 #userInput {
     text-align: center;
+    position: relative;
+    top: 1%;
 }
 
 #continueDiv {
+    position: relative;
     float: right;
+    top: 10%;
 }
 
 #imgDiv {
     position: relative;
     width: 100%;
     height: 50%;
-    border: solid 1px;
+   /* border: solid 1px;*/
     top: 0;
     z-index: -1;
 }
@@ -30,10 +40,51 @@
 }
 
 #list {
-    float: left;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: 15%;
+    left: 16%;
     z-index: 1000;
-    border: salmon solid 1px;
+    text-align: center;
+    margin: auto;
+    /*border: salmon solid 1px;*/
+    width: 70%;
+    font-size: 40px;
+    font-family:verdana;
+
 }
+
+#uList li {
+    padding: 2%;
+}
+
+input {
+    width: 90%;
+    float: left;
+    font-size: 30px;
+    height: 5%;
+    font-family:verdana;
+
+}
+.addButton {
+    width: 10%;
+    float: left;
+    font-size: 50px;
+    background-color: #3EBDCF;
+    height: 5%;
+    font-family:verdana;
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.closeButton {
+    position:absolute;
+    right: 0;
+    background-color: #f44336;
+
+}
+
