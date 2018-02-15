@@ -1,7 +1,7 @@
-body{padding:20px;}
+/*body{padding:20px;}
 
 /*Vertical Steps*/
-.list-group.vertical-steps{
+/*.list-group.vertical-steps{
   padding-left:10px;
 }
 .list-group.vertical-steps .list-group-item{
@@ -43,7 +43,7 @@ body{padding:20px;}
   padding-top:2px;
 }
 /*Active/ Completed States*/
-.list-group.vertical-steps .list-group-item.active::before{
+/*.list-group.vertical-steps .list-group-item.active::before{
   background-color:#0052c2;
   color:#fff;
 }
@@ -61,7 +61,7 @@ body{padding:20px;}
 ol {
     list-style-type: none;
 }
-
+*/
 
 * {
   box-sizing: border-box;
@@ -69,7 +69,7 @@ ol {
 
 /* Set a background color */
 body {
-  background-color: #474e5d;
+  background-color: #ffece5;
   font-family: Helvetica, sans-serif;
 }
 
@@ -108,7 +108,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #3EBDCF;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
