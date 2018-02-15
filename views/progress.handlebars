@@ -13,7 +13,7 @@
         </button>
     </a>
 
-<h1>Progress</h1>
+<h1>{{topic}}</h1>
 
 
 <body>
@@ -40,19 +40,22 @@
     </div>-->
 
     <div class="timeline">
-  <div class="container left">
-    <div class="content">
-      <h2>2017</h2>
-      <p>Lorem ipsum..</p>
+        {{#each progress_data}}
+        <div class="{{containerClass}}">
+            <div class="content">
+                <h2>{{stepName}}</h2>
+                <p>{{feelingData}}</p>
+                {{#if finished}}
+                {{else}}
+                    <a href="/checkin">
+                    <button>Check in</button>
+                    </a>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
     </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2016</h2>
-      <p>Lorem ipsum..</p>
-    </div>
-  </div>
-</div>
+
 </body>
 
 </html>

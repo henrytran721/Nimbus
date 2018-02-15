@@ -1,0 +1,30 @@
+{
+    "topic": "Math Midterm",
+    "progress": [
+        {
+            "stepName": "Review Podcasts",
+            "feelingData": "Tired, but relieved I was able to understand it a second time.",
+            "containerClass": "container left",
+            "finished": true
+        },
+        {
+            "stepName": "Redo Homework Problems",
+            "feelingData": "A bit more confident",
+            "containerClass": "container right",
+            "finished": true
+        },
+        {
+            "stepName": "Attend Review Discussion",
+            "feelingData": "Was helpful",
+            "containerClass": "container left",
+            "finished": true
+
+        },
+        {
+            "stepName": "Practice Exam",
+            "feelingData": "",
+            "containerClass": "container right",
+            "finished": false
+        }
+    ]
+}
