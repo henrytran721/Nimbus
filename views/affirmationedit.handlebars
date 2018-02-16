@@ -1,7 +1,40 @@
 <html>
 <head>
-<title>affirmation edit</title>
-<link href="css\affirmationEdit.css" rel="stylesheet">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>affirmation edit</title>
+
+	<link href="css\affirmationEdit.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
+<body>
+	<h3 id="header">Edit Your Affirmations</h3>
+
+	<div id="list">
+        <ul id="UList">
+            <li>I have been given endless talents which I begin to utilize today.</li>
+            <li>I possess the qualities needed to be extremely successful.</li>
+            <li>Today, I abandon my old habits and take up new, more positive ones.</li>
+        </ul>        
+    </div>
+
+    <div id="userInput">
+        <!--<form>
+             <input type="text" name="task"><br>
+             <input type="submit" value="Submit">
+        </form>-->
+        <input type="text" id="myInput" placeholder="Add an affirmation">
+        <span onclick="addList()" class="addButton">+</span>
+    </div>
+
+    <div>
+        <a href="/affirmations">
+            <button id="doneButton">Done</button>
+        </a>
+    </div>
+
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/stepsReflect.js"></script>
+</body>
 </html>
