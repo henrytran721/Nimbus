@@ -6,3 +6,13 @@
 #continueDiv {
     float: right;
 }
+
+#q1, #q2, #q3 {
+	height: 10%;
+	width: 90%;
+	margin: 8px;
+	padding: 12px 20px;
+    display: inline-block;
+	border: 2px solid #3EBDCF;
+    box-sizing: border-box;
+}

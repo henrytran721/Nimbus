@@ -8,6 +8,21 @@ function initializePage() {
     console.log("Javascript for Reflect Connected");
 }
 
+function nextPage() {
+    var testArray = document.getElementsByTagName("li");
+    var itemsArray = [];
+    var i;
+    for( i = 0; i < testArray.length; i++) {
+        itemsArray.push(testArray[i].childNodes['0'].data);
+    }
+   // console.log(testArray);
+    console.log(itemsArray.length);
+
+    sessionStorage.setItem('reflectionItems', JSON.stringify(itemsArray));
+   // $.get('/selectReflect');
+
+}
+
 // close button
 var listedItems = document.getElementsByTagName("LI");
 var i;
