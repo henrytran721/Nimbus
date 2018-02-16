@@ -3,6 +3,7 @@
     text-align: center;
 }
 
+<<<<<<< HEAD
 #continueDiv {
     float: right;
 }
@@ -12,3 +13,39 @@
 }
 #back {
 }
+=======
+#progressButton {
+	float: right;
+	border: 1px solid #3EBDCF;
+    box-sizing: border-box;
+}
+
+#myInput {
+	width: 60%;
+	border: 1px solid #3EBDCF;
+	box-sizing: border-box;
+}
+
+#uList li {
+    padding: 2%;
+}
+
+.closeButton {
+    position:absolute;
+    right: 10%;
+    background-color: #f44336;
+    z-index: 1000;
+
+}
+
+.closeButton:hover {
+    background-color: salmon;
+}
+
+.addButton {
+    background-color: #3EBDCF;
+    height: 5%;
+    font-family:verdana;
+    text-align: center;
+}
+>>>>>>> a57e88c593f97d1cc92635ebd695e0512b91b35c
