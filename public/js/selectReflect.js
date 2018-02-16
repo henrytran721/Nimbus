@@ -21,3 +21,18 @@ function initializePage() {
         }
     
 }
+
+var list = document.getElementsByTagName('li');
+var selectImportant = document.querySelector('ul');
+selectImportant.addEventListener('click', function(ev) {
+    sessionStorage.setItem('theFocus', ev.target.innerText);
+    //console.log(ev.target.innerText);
+    //console.log(list.length);
+    ev.target.classList.remove("crossout");
+    for( var i = 0; i < list.length; i++) {
+        //console.log(list[i].innerHTML);
+        if( list[i].innerHTML != ev.target.innerText) {
+            list[i].classList.add('crossout');
+        }
+    }
+}, false);  

@@ -57,7 +57,9 @@ h3 {
 }
 
 #uList li {
+    margin-top: 1%;
     padding: 2%;
+    background: #eee;
 }
 
 
@@ -67,4 +69,6 @@ ul {
     list-style: none;
 }
 
-
+.crossout {
+    text-decoration: line-through;
+}
