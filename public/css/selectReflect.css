@@ -2,6 +2,8 @@
 #title {
     text-align: center;
     font-family:verdana;
+    color: #3EBDCF;
+    margin-bottom:10%;
 }
 
 h3 {
@@ -9,19 +11,34 @@ h3 {
     font-family: verdana;
 }
 
-#continueDiv {
-    float: right;   
+#continueDiv { 
+float:right;  
+margin-right:6%;
 }
 
 #continueDiv button {
     font-size: 45px;
+    background-color:#3EBDCF;
+    color:white;
+    width:110%;
+    height:5%;
+    border-radius:15%;
+    border:white;
+
 }
 
 .backButton {
     float:left;
+    margin-left:4%;
 }
 #back {
-    font-size: 45;
+    font-size: 45px;
+    background-color:#3EBDCF;
+    color:white;
+    width:135%;
+    height:5%;
+    border-radius:15%;
+    border:white;
 }
 
 #imgDiv {
@@ -48,18 +65,20 @@ h3 {
     left: 16%;
     z-index: 1000;
     text-align: center;
-    margin: auto;
     /*border: salmon solid 1px;*/
     width: 70%;
     font-size: 40px;
     font-family:verdana;
+    margin-top:5%;
+
 
 }
 
 #uList li {
     margin-top: 1%;
     padding: 2%;
-    background: #eee;
+    background: white;
+    color:#3EBDCF;
 }
 
 

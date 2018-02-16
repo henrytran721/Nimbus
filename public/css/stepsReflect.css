@@ -1,6 +1,8 @@
 
 #title {
     text-align: center;
+    font-family:verdana;
+    color:#3EBDCF;
 }
 
 <<<<<<< HEAD
@@ -28,6 +30,8 @@
 
 #uList li {
     padding: 2%;
+    color:#3EBDCF;
+    font-family:verdana;
 }
 
 .closeButton {
@@ -35,6 +39,8 @@
     right: 10%;
     background-color: #f44336;
     z-index: 1000;
+    color:white;
+    width:5%;
 
 }
 
