@@ -6,3 +6,9 @@ h1 {
 .homeButton {
     float: left;
 }
+
+#checkinButton {
+	border: 1px solid #3EBDCF;
+    box-sizing: border-box;
+}
+

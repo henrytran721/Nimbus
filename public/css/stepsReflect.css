@@ -3,6 +3,37 @@
     text-align: center;
 }
 
-#continueDiv {
-    float: right;
+#progressButton {
+	float: right;
+	border: 1px solid #3EBDCF;
+    box-sizing: border-box;
+}
+
+#myInput {
+	width: 60%;
+	border: 1px solid #3EBDCF;
+	box-sizing: border-box;
+}
+
+#uList li {
+    padding: 2%;
+}
+
+.closeButton {
+    position:absolute;
+    right: 10%;
+    background-color: #f44336;
+    z-index: 1000;
+
+}
+
+.closeButton:hover {
+    background-color: salmon;
+}
+
+.addButton {
+    background-color: #3EBDCF;
+    height: 5%;
+    font-family:verdana;
+    text-align: center;
 }
