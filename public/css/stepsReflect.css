@@ -5,17 +5,6 @@
     color:#3EBDCF;
 }
 
-<<<<<<< HEAD
-#continueDiv {
-    float: right;
-}
-
-.backButton {
-    float:left;
-}
-#back {
-}
-=======
 #progressButton {
 	float: right;
 	border: 1px solid #3EBDCF;
@@ -54,4 +43,3 @@
     font-family:verdana;
     text-align: center;
 }
->>>>>>> a57e88c593f97d1cc92635ebd695e0512b91b35c
