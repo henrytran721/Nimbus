@@ -41,8 +41,10 @@ var i;
 for ( i = 0; i < close.length; i++) {
     close[i].onclick = function() {
         var div = this.parentElement;
-        div.style.display = "none";
-        console.log("CLOSEE");
+        div.remove();
+       // div.style.display = "none";
+       // console.log(div);
+        //console.log("CLOSE");
     }
 }
 
@@ -50,7 +52,7 @@ function addList() {
     var li = document.createElement("li");
     var newItemVal = document.getElementById("myInput").value;
     var textObj = document.createTextNode(newItemVal);
-    console.log(document.getElementById("myInput"));
+    //console.log(document.getElementById("myInput"));
     li.appendChild(textObj);
     if( newItemVal == '') {
         alert("Please state what is on your mind.");
@@ -69,7 +71,8 @@ function addList() {
     for( i = 0; i < close.length; i++ ) {
         close[i].onclick = function() {
             var div = this.parentElement;
-            div.style.display = "none";
+            div.remove();
+            //div.style.display = "none";
         }
     }
 }
