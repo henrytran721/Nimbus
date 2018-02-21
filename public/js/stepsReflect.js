@@ -1,11 +1,23 @@
 'use strict';
 
+//var fs = require('fs');
+
+var jsonData = {};
+
 $(document).ready(function() {
     initializePage();
 })
 
 function initializePage() {
-    console.log("Javascript for Reflect Connected");
+    var topicText = sessionStorage.getItem('theFocus');
+    //var topic = {
+    //    "topic" : topicText
+    //}
+    var progress = [];
+
+    jsonData.topic = topicText;
+    jsonData.progress = progress;
+    //console.log(jsonData);
 }
 
 function nextPage() {
@@ -15,10 +27,35 @@ function nextPage() {
     for( i = 0; i < testArray.length; i++) {
         itemsArray.push(testArray[i].childNodes['0'].data);
     }
-   // console.log(testArray);
-    console.log(itemsArray.length);
 
-    sessionStorage.setItem('reflectionItems', JSON.stringify(itemsArray));
+
+    // Create json object for each step
+    var j;
+    for( j = 0; j < itemsArray.length; j++ ) {
+        var step = {
+            "stepName": itemsArray[j],
+            "feelingData": "",
+            "containerClass":"container left",
+            "finished": false
+        }
+        jsonData.progress.push(step);
+    }
+
+    var json = JSON.stringify(jsonData);
+
+    sessionStorage.setItem('stepsData', json);
+
+    //$.post("/progress", json);
+
+    //fs.writeFile('testJson.json', json, 'utf8', callback);
+
+    //$.post("/sendSteps", jsonData);
+    
+    //alert(itemsArray);
+   // console.log(testArray);
+   // console.log(itemsArray.length);
+
+   // sessionStorage.setItem('reflectionItems', JSON.stringify(itemsArray));
    // $.get('/selectReflect');
 
 }
@@ -32,7 +69,7 @@ for (i = 0; i < listedItems.length; i++) {
     span.className = "closeButton";
     span.appendChild(icon);
     listedItems[i].appendChild(span);
-    console.log("Added");
+   // console.log("Added");
 }
 
 //close action
@@ -41,8 +78,8 @@ var i;
 for ( i = 0; i < close.length; i++) {
     close[i].onclick = function() {
         var div = this.parentElement;
-        div.style.display = "none";
-        console.log("CLOSEE");
+        div.remove();
+        //div.style.display = "none";
     }
 }
 
@@ -50,7 +87,7 @@ function addList() {
     var li = document.createElement("li");
     var newItemVal = document.getElementById("myInput").value;
     var textObj = document.createTextNode(newItemVal);
-    console.log(document.getElementById("myInput"));
+    //console.log(document.getElementById("myInput"));
     li.appendChild(textObj);
     if( newItemVal == '') {
         alert("Please submit an actionable step towards your goal.");
@@ -69,7 +106,8 @@ function addList() {
     for( i = 0; i < close.length; i++ ) {
         close[i].onclick = function() {
             var div = this.parentElement;
-            div.style.display = "none";
+            div.remove();
+            //div.style.display = "none";
         }
     }
 }

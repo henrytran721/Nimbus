@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars')
+//var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 // Example route
@@ -22,6 +23,9 @@ var affirmationEdit = require('./routes/affirmationedit')
 var login = require('./routes/login')
 
 var app = express();
+//app.use(bodyParser.json);
+
+var fs = require('fs');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -56,6 +60,15 @@ app.get('/stepsReflect', stepsReflect.viewStepsReflect);
 app.get('/affirmationEdit', affirmationEdit.viewEditAffirmations);
 app.get('/login', login.viewLogin);
 
+
+app.post('/sendSteps', function(req, res) {
+  console.log(req.body);
+  fs.writeFileSync('testJson.json', JSON.stringify(req.body), 'utf8', callback);
+});
+
+var callback = function() {
+  console.log("callback");
+}
 
 
 http.createServer(app).listen(app.get('port'), function(){

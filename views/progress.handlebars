@@ -17,27 +17,7 @@
 
 
 <body>
-    <!--<div>
-        <ol class="list-group vertical-steps">
-            <li class="list-group-item completed">
-                <strong>Read Textbook</strong>
-            </li>
-
-            <li class="list-group-item active">
-                <strong>Podcast</strong>
-            </li>
-
-           <li class="list-group-item">
-                <strong>Practice Midterm</strong>
-                <a href="/checkin">
-                    <button>Check in</button>   
-                </a>
-            </li>
-
-        </ol>
-     
-
-    </div>-->
+    <h1>{{topic}}</h1>
 
     <div class="timeline">
         {{#each progress_data}}
@@ -56,6 +36,9 @@
         {{/each}}
     </div>
 
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/progress.js"></script>
 </body>
 
 </html>
