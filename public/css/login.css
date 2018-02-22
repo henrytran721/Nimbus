@@ -11,8 +11,6 @@ img {
 	margin-top:15%;
 	margin-left:15%;
 }
-.logo {
-}
 
 #username {
 	margin-top:30%;
@@ -42,13 +40,6 @@ img {
 	padding-left:10px;
 }
 .loginButton {
-
-	/*border:2px solid #000000;
-	width:20%;
-	height:3%;
-	text-align:center;
-	margin-top:10%;
-	margin-left:30%;*/
 	width: 20%;
     background-color:#3EBDCF;
     padding: 14px 20px;
@@ -59,8 +50,23 @@ img {
     cursor: pointer;
     font-family:verdana;
     font-weight:bold;
+}
 
+.facebookLogin {
+	margin-left:30%;
+	margin-top:-25%;
+}
+#photo {
+	margin-top:30%;
+	width:60%;
+}
 
+#continue {
+	display: none;
+	margin-top:5%;
+	margin-left:35%;
+	border: 2px solid #3EBDCF;
+    box-sizing: border-box;
 }
 
 
