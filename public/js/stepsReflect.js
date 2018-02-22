@@ -44,6 +44,7 @@ function nextPage() {
     var json = JSON.stringify(jsonData);
 
     sessionStorage.setItem('stepsData', json);
+    $.post('/progress/setSteps', jsonData);
 
     //$.post("/progress", json);
 
