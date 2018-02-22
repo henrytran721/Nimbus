@@ -6,3 +6,4 @@ exports.viewProgress = function(req, res) {
         //"progress_data":data['progress']
     });
 }
+

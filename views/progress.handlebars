@@ -20,13 +20,16 @@
 
     <div class="timeline">
         {{#each progress_data}}
-        <div class="{{containerClass}}">
+        <div class="{{containerClass}}">    
             <div class="content">
                 <h2>{{stepName}}</h2>
                 <p>{{feelingData}}</p>
-                {{#if finished}}
+                {{#if (ifEquals finished)}}
+                    <a href="/checkin/{{stepName}}">
+                    <button id=checkinButton>View</button>
+                    </a>
                 {{else}}
-                    <a href="/checkin">
+                    <a href="/checkin/{{stepName}}">
                     <button id=checkinButton>Check in</button>
                     </a>
                 {{/if}}

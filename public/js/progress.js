@@ -12,6 +12,7 @@ function initializePage() {
     console.log(data);
 
     $(document.body).append(data);
+
     
    
    // html = $('#progressHandlebar').html();
@@ -20,4 +21,3 @@ function initializePage() {
    // appendText = template(data);
    // $('#data').html(appendText);
 }
-

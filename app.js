@@ -57,7 +57,7 @@ app.get('/', index.view);
 app.get('/reflect', reflect.viewReflect);
 //app.get('/progress', progress.viewProgress);
 app.get('/affirmations', affirmations.viewAffirmations);
-app.get('/checkin', checkin.viewCheckin);
+app.get('/checkin/:step', checkin.viewCheckin);
 app.get('/selectReflect', selectReflect.viewSelectReflect);
 app.get('/evaluateReflect', evaluateReflect.viewEvaluateReflect);
 app.get('/stepsReflect', stepsReflect.viewStepsReflect);
@@ -72,7 +72,15 @@ app.get('/progress', function(req, res) {
 
     res.render('progress', {
       "topic": result['topic'],
-      "progress_data":result['progress']
+      "progress_data":result['progress'],
+      helpers: {
+        ifEquals: function(arg) {
+          if( arg == "true") {
+          return true;
+          }
+          return false;
+        }
+      }
     });
   });
 });

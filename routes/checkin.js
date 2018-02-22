@@ -1,5 +1,8 @@
 exports.viewCheckin = function(req, res) {
-    res.render('checkin', {
+    console.log(req.params.step)
 
-    });
+    res.render('checkin', {
+        'stepName': req.params.step
+    }); 
+    
 }

@@ -14,14 +14,23 @@ function initializePage() {
     //    "topic" : topicText
     //}
     var progress = [];
-
     jsonData.topic = topicText;
+    if( topicText == '') {
+        jsonData.topic = "You did not select a topic";
+    }
+    //jsonData.topic = topicText;
     jsonData.progress = progress;
     //console.log(jsonData);
 }
 
 function nextPage() {
     var testArray = document.getElementsByTagName("li");
+
+    if(testArray.length == 0) {
+        alert("Please Enter Steps")
+        return;
+    }
+
     var itemsArray = [];
     var i;
     for( i = 0; i < testArray.length; i++) {
