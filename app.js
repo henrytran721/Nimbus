@@ -9,8 +9,9 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 //var bodyParser = require('body-parser');
 
+
 var index = require('./routes/index');
-// Example route
+// Example route  
 // var user = require('./routes/user');
 var reflect = require('./routes/reflect');
 var progress = require('./routes/progress');  
@@ -70,6 +71,23 @@ var callback = function() {
   console.log("callback");
 }
 
+/*
+var uri = "mongodb://heroku_n87z1z2v:p2vcn0hj1n0pd7u35naet61hlq@ds243798.mlab.com:43798/heroku_n87z1z2v";
+
+mongodb.MongoClient.connect(uri, function(err, database) {
+  if(err) {
+    console.log(err);
+    process.exit(1);
+  }
+  db = database;
+  console.log("Database connected");
+
+  http.createServer(app).listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+  });
+
+});
+*/
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
