@@ -57,7 +57,7 @@ app.get('/', index.view);
 app.get('/reflect', reflect.viewReflect);
 //app.get('/progress', progress.viewProgress);
 app.get('/affirmations', affirmations.viewAffirmations);
-app.get('/checkin/:step', checkin.viewCheckin);
+app.get('/checkin/:step/:idx', checkin.viewCheckin);
 app.get('/selectReflect', selectReflect.viewSelectReflect);
 app.get('/evaluateReflect', evaluateReflect.viewEvaluateReflect);
 app.get('/stepsReflect', stepsReflect.viewStepsReflect);
@@ -86,7 +86,7 @@ app.get('/progress', function(req, res) {
 });
 
 app.post('/progress/setSteps', function(req, res) {
-  console.log(req.body);
+  //console.log(req.body);
   db.collection("stepsData").remove({});
   //db.collection("stepsData").drop(function(err, delOk) {
   //  if(err) throw err;
@@ -101,6 +101,27 @@ app.post('/progress/setSteps', function(req, res) {
     console.log("item added to collection");
   })
   
+
+});
+
+app.post('/progress/updateFeel', function(req, res) {
+  //console.log(req.body);
+  //console.log(req.body.step);
+  //console.log(req.body.feelData);
+  //console.log(req.body.stepNum);
+  var str = "progress." + req.body.stepNum + ".feelingData";  
+
+  var updateVal = {};
+  updateVal[str] = req.body.feelData;
+  console.log(updateVal);
+  db.collection("stepsData").update(
+    {},
+    {
+      $set:
+      
+        updateVal
+        //"progress.0.feelingData": req.body.feelData
+    })
 
 });
 

@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Check In</title>
-		<link href="css\checkin.css" rel="stylesheet">
+		<link href="css\checkin.css" type="text/css" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style>
 			#q1, #q2, #q3 {
@@ -17,7 +17,8 @@
 </head>
 
 
-<h1>{{stepName}}</h1>
+<h1 id="title">{{stepName}}</h1>
+<h2>Step: <span id="stepNum">{{index}}</span></h2>
 
 <body>
 
@@ -31,11 +32,13 @@
 
 	<div class="progressButtonDiv">
 		<a href="/progress">
-			<button class="progressButton">
+			<button class="progressButton" onclick="nextPage()">
 				Done
 			</button>
 		</a>
 	</div>
-
+    <script src="/js/jquery-1.11.0.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/checkin.js"></script>
 </body>
 </html>

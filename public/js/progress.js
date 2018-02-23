@@ -9,7 +9,7 @@ $(document).ready(function() {
 function initializePage() {
 
     var data = JSON.parse(sessionStorage.getItem('stepsData'));
-    console.log(data);
+    //console.log(data);
 
     $(document.body).append(data);
 
