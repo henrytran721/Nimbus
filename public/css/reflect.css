@@ -89,14 +89,14 @@ input {
 .addButton {
     width: 10%;
     float: left;
-    font-size: 50px;
+    font-size: 70px;
     background-color: #3EBDCF;
-    height: 4%;
+    height: 5%;
     font-family:verdana;
     text-align: center;
     border-radius:15%;
     color: white;
-
+    margin-left: 5%;
 }
 
 ul {
@@ -117,4 +117,16 @@ ul {
 
 .closeButton:hover {
     background-color: salmon;
+}
+
+#home {
+    width:175%;
+}
+
+#myInput {
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #3EBDCF;
+    box-sizing: border-box;
 }

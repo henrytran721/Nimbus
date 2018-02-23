@@ -20,9 +20,43 @@
     background-color: salmon;
 }
 
+
 .addButton {
+    font-size: 30px;
     background-color: #3EBDCF;
-    height: 5%;
     font-family:verdana;
     text-align: center;
+    border-radius:15%;
+    color: white;
+    margin-left: 5%;
+}
+
+#myInput {
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 2px solid #3EBDCF;
+    box-sizing: border-box;
+}
+
+.doneButton {
+    float:left;
+    margin-left:58%;
+}
+#done {
+    margin-top: 50%;
+    font-size: 15px;
+    background-color:#3EBDCF;
+    color:white;
+    width:135%;
+    height:5%;
+    border-radius:15%;
+    border:white;
+}
+
+
+#title {
+    text-align: center;
+    font-family:verdana;
+    color:#3EBDCF;
 }

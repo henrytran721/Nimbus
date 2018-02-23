@@ -72,7 +72,7 @@ h4{
     font-weight:bold;
     cursor: pointer;
     margin-left:30%;
-    margin-top:80%;
+    margin-top:60%;
     border-radius:10%;
 
 }
@@ -130,4 +130,15 @@ input[type=submit] {
 }
 .homebutton{
     margin-left:8%;
+}
+
+#home {
+    width:175%;
+}
+
+#title {
+    font-size: 30px;
+    text-align: center;
+    font-family:verdana;
+    color:#3EBDCF;
 }

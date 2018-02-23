@@ -1,8 +1,14 @@
 
 #title {
     text-align: center;
+    font-family:verdana;
+    color: #3EBDCF;
+    margin-bottom:10%;
 }
 
+#focus {
+	color: black;
+}
 #continueDiv {
     float: right;
 }
@@ -15,4 +21,32 @@
     display: inline-block;
 	border: 2px solid #3EBDCF;
     box-sizing: border-box;
+}
+
+.backButton {
+    float:left;
+    margin-left:3%;
+}
+#back {
+    font-size: 15px;
+    background-color:#3EBDCF;
+    color:white;
+    width:135%;
+    height:5%;
+    border-radius:15%;
+    border:white;
+}
+
+.saveButton {
+    float:left;
+    margin-left:58%;
+}
+#save {
+    font-size: 15px;
+    background-color:#3EBDCF;
+    color:white;
+    width:135%;
+    height:5%;
+    border-radius:15%;
+    border:white;
 }
