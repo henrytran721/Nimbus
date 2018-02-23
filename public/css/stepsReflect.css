@@ -34,29 +34,28 @@
 
 .backButton {
     float:left;
-    margin-left:3%;
+    top:2%;
+    position: relative;
+
 }
 #back {
-    margin-top: 25%;
     font-size: 15px;
     background-color:#3EBDCF;
     color:white;
-    width:135%;
     height:5%;
     border-radius:15%;
     border:white;
 }
 
 .progressButton {
-    float:left;
-    margin-left:58%;
+    float:right;
+    top:2%;
+    position: relative;
 }
 #progress {
-    margin-top:-33%;
     font-size: 15px;
     background-color:#3EBDCF;
     color:white;
-    width:135%;
     height:5%;
     border-radius:15%;
     border:white;
